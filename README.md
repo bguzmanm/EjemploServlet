@@ -7,5 +7,9 @@ En este proyecto, encuentras 2 Servlets implementados, en el package cl.awakelab
 
 Toma nota de los comentarios que te guiarán para comprender la implementación. Recuerda que esta es es básica y que nos permitirá ir implementando nuevas funcionalidades durante el transcurso del bootcamp.
 
+## Tomcat
+
+- Toma nota que la versión de Tomcat que está utilizando es la versión 8.5
+
 @bguzmanm
 @awakelab.cl
