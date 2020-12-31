@@ -1,3 +1,4 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page import="cl.awakelab.model.Participante"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -12,15 +13,16 @@
 <body>
 	<div class="container">
 	<h1>Detalle del Participante</h1>
-	
+	<c:set var="p" value="${participante}"></c:set>
 	<% 
 		//rescato desde el request, el Participante que envía el Servlet MostrarParticipante, para luego mostrarlo.
 		Participante p =  (Participante)request.getAttribute("participante");
 	
 	%>
 	
-	<h2><% out.println(p.getNombre() + " " + p.getApellido()); %></h2>
-	<p><% out.println(p.getRut()); %></p>
+	<h2><c:out value="${p.getNombre()}"></c:out> <c:out value="${p.getApellido()"></c:out></h2>
+	<h3><c:out value="${p.getRut()}"></c:out></h3>
+	 
 	
 	<a href="Controlador">Volver</a>
 	</div>
